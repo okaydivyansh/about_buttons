@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of buttons</title>
+</head>
+<body>
+
+    <button type="submit">This button will not submit as it is outside form</button>
+    <form action="/tacos">
+        <button type="button">this just a button which wont submit</button> <!--This button wont submit as its type is button-->
+        <br>
+        <button type="submit">This button  will submit</button> <!--This button will submit as its type is submit-->
+        <br>
+        <button>This button will submit</button> <!--Even if you dont give any attribute then  by default, it is taken to be submit button-->
+        <br>
+
+         <!-- Another way of making a button using input. but here button humesha
+         submit naam ki banegi. To change the name,we need to use value attribute. -->
+
+         <input type="submit"> <!--This will be a button named submit which will submit -->
+         <br>
+         <input type="submit" value="This is a button"> <!-- This will be button named " This is a button"-->
+    </form>
+</body>
+</html>
